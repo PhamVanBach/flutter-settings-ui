@@ -52,7 +52,7 @@ class AndroidSettingsTile extends StatelessWidget {
                     onPressed?.call(context);
                   }
                 },
-          splashFactory: NoSplash.splashFactory,
+          splashFactory: InkRipple.splashFactory,
           highlightColor: theme.themeData.tileHighlightColor,
           child: Container(
             child: Row(
