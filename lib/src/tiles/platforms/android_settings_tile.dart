@@ -43,7 +43,6 @@ class AndroidSettingsTile extends StatelessWidget {
       child: Material(
         color: Colors.transparent,
         child: InkWell(
-          splashFactory: NoSplash.splashFactory,
           onTap: cantShowAnimation
               ? null
               : () {
@@ -53,6 +52,7 @@ class AndroidSettingsTile extends StatelessWidget {
                     onPressed?.call(context);
                   }
                 },
+          splashFactory: NoSplash.splashFactory,
           highlightColor: theme.themeData.tileHighlightColor,
           child: Container(
             child: Row(
